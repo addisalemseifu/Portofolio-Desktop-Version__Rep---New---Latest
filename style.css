@@ -87,12 +87,13 @@ body {
 }
 
 .main__wrapper {
-  /* height: 500px; */
-  background-image: url(./img/mobile.jpg);
+  /* width: 100vw; */
+  background-image: url(./img/contact__\ back.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom-left-radius: 100px;
+  background-color: white;
 }
 
 .porto_wrapper {
@@ -400,7 +401,6 @@ body {
 
 .see-project {
   width: fit-content;
-  height: 68px;
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 24px;
@@ -781,8 +781,10 @@ body {
   justify-content: space-between;
   align-self: center;
   height: 40px;
-  width: 60px;
-  margin-left: -60px;
+}
+
+#bar__wrapper1 {
+  margin-right: 5px;
 }
 
 .bar {
@@ -797,12 +799,16 @@ body {
   border: 1px solid #396df2;
 }
 
+.platform__wrapper #bar__wrapper1:nth-child(2) {
+  transform: translateY(-15px) rotate(90deg);
+}
+
 .bar__wrapper .bar:nth-child(1) {
   transform: translateY(10px) rotate(45deg);
 }
 
 .bar__wrapper .bar:nth-child(2) {
-  transform: translateY(-14px) rotate(-45deg);
+  transform: translateY(-17px)  rotate(-45deg);
 }
 
 .underline {
@@ -819,8 +825,8 @@ body {
 }
 
 .contact-me_page {
-  width: 100vw;
-  height: 660px;
+  /* width: 100vw;
+  height: 660px; */
   background-image: url(./img/contact__main-back.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -829,12 +835,12 @@ body {
 }
 
 .forms__page {
-  position: relative;
+  position: absolute;
   top: -1000000px;
 }
 
 .contact__wrapper {
-  margin: 69px 64px 38px 75px;
+  margin: 69px 64px 36px 75px;
   width: auto;
   background-image: url(./img/contact__\ back.png);
   background-position: center;
@@ -946,11 +952,12 @@ body {
   }
 
   .main__wrapper {
-    background-image: url(./img/mobile.jpg);
+    background-image: url(./img/contact__\ back.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom-left-radius: 100px;
+    width: 100%;
   }
 
   .porto_wrapper {
@@ -1262,7 +1269,6 @@ body {
 
   .see-project {
     width: fit-content;
-    height: 68px;
     margin-left: 0;
     margin-right: 16px;
     margin-top: 24px;
@@ -1660,6 +1666,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 90%;
   }
 
   .bar__wrapper {
@@ -1668,8 +1675,11 @@ body {
     justify-content: space-between;
     align-self: center;
     height: 40px;
-    width: 60px;
     margin-left: -60px;
+  }
+
+  #bar__wrapper1 {
+    text-align: end;
   }
 
   .bar {
@@ -1872,5 +1882,48 @@ body {
 
   .circle {
     margin: unset;
+  }
+}
+
+@media (min-width: 1000px) {
+  .headline {
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: cubic-bezier(0.26, -0.35, 0.99, 1.54);
+  }
+
+  @keyframes myanimation {
+    0% {
+      background-color: white;
+      top: 0;
+      left: 0;
+    }
+
+    25% {
+      background-color: red;
+      top: 0;
+      left: 200px;
+    }
+
+    50% {
+      background-color: green;
+      top: 200px;
+      left: 200px;
+    }
+
+    75% {
+      background-color: blue;
+      top: 200px;
+      left: 0;
+    }
+
+    100% {
+      background-color: white;
+      top: 0;
+      left: 0;
+    }
   }
 }
