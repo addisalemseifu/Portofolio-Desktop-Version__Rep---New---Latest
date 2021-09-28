@@ -20,7 +20,7 @@ body {
 
 .menue_bar {
   position: relative;
-  top: -1000px;
+  top: -10000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
