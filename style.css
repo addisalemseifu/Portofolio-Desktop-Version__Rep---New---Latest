@@ -16,8 +16,13 @@ body {
 .nav__wrapper {
   background-color: white;
   border: 2px solid blue;
-  /* position: sticky; */
+   position: fixed; 
+   width: 100%;
+   z-index: 20;
   /* top: 0; */
+}
+.navopen {
+  height: 100vh;
 }
 
 .menue_bar {
@@ -998,7 +1003,7 @@ body {
     transition: all 0.5s ease;
     z-index: 99;
     top: 100px;
-    height: 100vh;
+    height: 70vh;
     background: #fff;
     opacity: 1;
     align-self: center;
