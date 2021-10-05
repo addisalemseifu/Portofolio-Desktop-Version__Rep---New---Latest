@@ -1,4 +1,5 @@
 const menue = document.querySelector('.menue_bar');
+const wrapper = document.querySelector('.nav_wrapper');
 const menue_links= document.querySelector('.menue_bar_desktop');
 const navLogo = document.querySelector('#navbar__logo');
 
@@ -6,6 +7,7 @@ const navLogo = document.querySelector('#navbar__logo');
 menue.addEventListener('click', function(){
     menue.classList.toggle('a');
     menue_links.classList.toggle('active');
+    wrapper.classList.toggle('.navopen');
 });
 
 const menuBarHide = () => {
