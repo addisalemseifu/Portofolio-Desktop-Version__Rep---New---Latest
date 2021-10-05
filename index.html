@@ -14,19 +14,19 @@
 </head>
 <body>
     
-    <section class="front_page">
+    <section class="front_page" id="front">
         <div class="nav__wrapper">
             <nav class="nav_bar">
-                <h2 class="logo">My Logo</h2>
-                <ul class="menue_bar">
+                <h2 class ="logo"><a href="#front"></a>MyLogo</h2>
+                <ul class="menue_bar" id="mobile_menue">
                     <li class="bar1"></li>
                     <li class="bar1"></li>
                     <li class="bar1"></li>
                 </ul>
-                <ul class="menue_bar_desktop">
-                    <li class="nav_list"><a href="#" class="nav_link">Portofolio</a></li>
-                    <li class="nav_list"><a href="#" class="nav_link">About</a></li>
-                    <li class="nav_list"><a href="#" class="nav_link">Contact</a></li>
+                <ul class="menue_bar_desktop" >
+                    <li class="nav_list"><a href="#portfolio" class="nav_link">Portofolio</a></li>
+                    <li class="nav_list"><a href="#about" class="nav_link">About</a></li>
+                    <li class="nav_list"><a href="#contact" class="nav_link">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,7 +46,7 @@
         </div>
     </section>
     
-    <section class="grid__wrapper">
+    <section class="grid__wrapper" id="portfolio">
         <div class="covers">
             <img class="img__class" id="pic__2" src="./img/pic1.png" alt="">
             <img class="img__class" id="pic__1" src="./img/pic1.png" alt="">
@@ -138,7 +138,7 @@
         </div>
     </section>
 
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="about__wrapper">
             <div class="discription__wrapper">
                 <div class="details-about-me" id="about_title">
@@ -205,7 +205,7 @@
         </div>
     </section>
 
-    <section class="forms__page">
+    <section class="forms__page" id="contact">
         <div class="form__wrapper">
             <h3 class="form__title">Contact me</h3>
             <p class="form__paragraph">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
@@ -217,5 +217,35 @@
             </form>
         </div>
     </section>
+
+    <section id="popup">
+        <div class="cover" id="popup_wrapper">
+            <div class="right__box">
+                <div class="close_wrapper">
+                    <h1 class="bold-text" id="popup_header">Tonic</h1>
+                    <span class="closeBtn">&times</span>
+                </div>
+                
+                <ul class="selections">
+                    <li class="main__txt__wrapper"><a href="#" class="main__txt"></a>CANOPY</li>
+                    <li class="circle__wrapper"><a href="#" class="circle"></a></li>
+                    <li class="list__wrapper"><a href="#" class="list">Back End Dev</a></li>
+                    <li class="circle__wrapper"><a href="#" class="circle"></a></li>
+                    <li class="list__wrapper"><a href="#" class="list">2015</a></li>
+                </ul>
+                <p class="signup-disc">A daily selection of privately personalized reads: no acounts or signup's required</p>
+                <img class="img__class" id="pic__2" src="./img/pic1.png" alt="">
+                <img class="img__class" id="pic__1" src="./img/pic1.png" alt="">
+                <ul class="platform">
+                    <li class="pla__btn">html</li>
+                    <li class="pla__btn">css</li>
+                    <li class="pla__btn">javascript</li>
+                </ul>
+                <button class="see-project">See Live</button>
+                <button class="see-project">See Source<i class="fab fa-github-square"></i></button>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
 </body>
 </html>
