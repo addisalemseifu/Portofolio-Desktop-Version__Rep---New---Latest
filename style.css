@@ -193,6 +193,7 @@ body {
   border: 2px solid blueviolet;
   background-color: white;
   justify-content: center;
+  width:100vw;
 }
 
 #popup_wrapper {
