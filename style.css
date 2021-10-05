@@ -195,6 +195,16 @@ body {
   justify-content: center;
 }
 
+#popup_wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 100px;
+  background-color: white;
+  border-radius: 20px;
+}
+
 .close_wrapper {
   display: flex;
   justify-content: space-between;
