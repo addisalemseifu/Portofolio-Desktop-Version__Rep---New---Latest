@@ -997,7 +997,7 @@ body {
     width: 100%;
     transition: all 0.5s ease;
     z-index: 99;
-    top: 80px;
+    top: 100px;
     height: 100vh;
     background: #fff;
     opacity: 1;
