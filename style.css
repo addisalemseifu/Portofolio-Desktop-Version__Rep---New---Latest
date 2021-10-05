@@ -15,17 +15,6 @@ body {
 
 .nav__wrapper {
   background-color: white;
-<<<<<<< HEAD
-=======
-  border: 2px solid blue;
-   position: fixed; 
-   width: 100%;
-   z-index: 20;
-  /* top: 0; */
->>>>>>> 5484333a0690eb5a5fe2540162f39a27f1cc02f4
-}
-.navopen {
-  height: 100vh;
 }
 
 .menue_bar {
