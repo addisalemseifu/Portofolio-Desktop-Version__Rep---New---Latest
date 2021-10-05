@@ -34,7 +34,6 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* margin-right: 154px; */
   margin-top: 25px;
 }
 
@@ -194,7 +193,6 @@ body {
   border: 2px solid blueviolet;
   background-color: white;
   justify-content: center;
-
 }
 
 .close_wrapper {
@@ -986,8 +984,6 @@ body {
     position: absolute;
     top: -1000px;
     transition: all 0.5s ease;
-    /* width: 100%; */
-    /* z-index: 100; */
   }
 
   .menue_bar_desktop.active {
