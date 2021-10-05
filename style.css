@@ -196,6 +196,14 @@ body {
   width:100vw;
   z-index: 5000;
 }
+.popup_tekst{
+  margin-left: 26px;
+  font-family: poppins, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: left;
+  color: #172b4d;
+}
 
 #popup_wrapper {
   display: grid;
