@@ -33,12 +33,20 @@ const menuBarHide = () => {
         modal.style.display = 'flex';
         // document.body.style.overflow = 'hidden';
     });
+
+    // modalTriggerButton.addEventListener('click', event => {
+    //     const popupSec = document.querySelector('#popup');
+    //     popupSec.innerHTML = "<div>fgsdfgsdfhfgh</div>";
+    // });
     
     madalCloseButton.addEventListener('click', event => {
         modal.style.display = 'none';
+        // trialSec.style.display = 'none';
         // document.body.style.overflow = 'initial';
     });
     
+
+
 
 
 
