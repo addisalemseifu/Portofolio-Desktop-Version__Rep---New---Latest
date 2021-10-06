@@ -185,7 +185,6 @@ body {
 
 #popup {
   position: fixed;
-  z-index: 1;
   left: 0;
   top: 0;
   display: none;
@@ -193,10 +192,11 @@ body {
   border: 2px solid blueviolet;
   background-color: white;
   justify-content: center;
-  width:100vw;
+  width: 100vw;
   z-index: 5000;
 }
-.popup_tekst{
+
+.popup_tekst {
   margin-left: 26px;
   font-family: poppins, sans-serif;
   font-weight: 700;
@@ -213,6 +213,31 @@ body {
   margin-bottom: 100px;
   background-color: white;
   border-radius: 20px;
+}
+
+.see_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#see_pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3rem;
+}
+
+#see_pro1 .fa-github-square {
+  color: #396df2;
+  font-size: 1rem;
+  margin-left: 0.6rem;
+}
+
+#see_pro.fa-radar {
+  color: #396df2;
+  font-size: 1rem;
+  margin-left: 1rem;
 }
 
 .close_wrapper {
@@ -584,12 +609,12 @@ body {
   border: 1px solid #396df2;
 }
 
-.fa-github-square {
+.icon.fa-github-square {
   color: #172b4d;
   font-size: 1.7rem;
 }
 
-.fa-github-square:hover {
+.icon.fa-github-square:hover {
   border: 1px solid #396df2;
 }
 
