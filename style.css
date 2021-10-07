@@ -185,14 +185,75 @@ body {
 
 #popup {
   position: fixed;
-  z-index: 1;
   left: 0;
   top: 0;
   display: none;
-  padding-right: 30px;
+  justify-self: center;
+  margin-left: 15%;
+  margin-right: 15%;
   border: 2px solid blueviolet;
   background-color: white;
   justify-content: center;
+  width: 70vw;
+  z-index: 5000;
+}
+
+.popup_tekst {
+  font-family: poppins, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: left;
+  color: #172b4d;
+}
+
+#popup_wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 100px;
+  background-color: white;
+  border-radius: 20px;
+  margin-left: 17%;
+  margin-right: 17%;
+}
+
+#popupimg {
+  margin-left: 0;
+  margin-right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.see_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#see_pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3rem;
+}
+
+#see_pro1 .fa-github-square {
+  color: #396df2;
+  font-size: 1rem;
+  margin-left: 0.6rem;
+  align-self: center;
+}
+
+.pro_anchor {
+  color: #396df2;
+  text-decoration: none;
+}
+
+#see_pro.fa-radar {
+  color: #396df2;
+  font-size: 1rem;
+  margin-left: 1rem;
 }
 
 .close_wrapper {
@@ -285,7 +346,7 @@ body {
 .img__class {
   margin: 24px;
   height: 324px;
-  width: 100%;
+  width: 94%;
 }
 
 .img__class:hover {
@@ -564,12 +625,12 @@ body {
   border: 1px solid #396df2;
 }
 
-.fa-github-square {
+.icon.fa-github-square {
   color: #172b4d;
   font-size: 1.7rem;
 }
 
-.fa-github-square:hover {
+.icon.fa-github-square:hover {
   border: 1px solid #396df2;
 }
 
@@ -1232,6 +1293,18 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
+  }
+
+  .plat_pop {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .pop-btn {
+    display: flex;
+    flex-direction: row;
+    width: unset;
   }
 
   .main__txt__wrapper {
@@ -1939,6 +2012,14 @@ body {
     margin-left: -15px;
     margin-bottom: 20px;
   }
+
+  #pop_txt_main {
+    display: flex;
+    width: unset;
+    height: unset;
+    font-size: 0.6rem;
+    margin-right: unset;
+  }
 }
 
 @media (max-width: 483px) {
@@ -1960,6 +2041,130 @@ body {
 
   .circle {
     margin: unset;
+  }
+
+  #pop_txt_main {
+    display: flex;
+    width: unset;
+    height: unset;
+    font-size: 0.4rem;
+    margin-right: unset;
+  }
+
+  #popup_header {
+    font-size: 1rem;
+  }
+
+  #popup_selection {
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    border: 2px solid blue;
+  }
+
+  #one {
+    display: flex;
+    width: unset;
+    height: unset;
+    margin-right: unset;
+  }
+
+  #two {
+    display: flex;
+    width: unset;
+    height: unset;
+    margin-right: unset;
+  }
+
+  #three {
+    display: flex;
+    width: unset;
+    height: unset;
+    margin-right: unset;
+  }
+
+  #four {
+    display: flex;
+    width: unset;
+    height: unset;
+    margin-right: unset;
+  }
+
+  #five {
+    display: flex;
+    width: unset;
+    height: unset;
+    margin-right: unset;
+  }
+
+  #six {
+    display: flex;
+  }
+
+  #seven {
+    display: flex;
+    width: unset;
+    height: unset;
+    font-size: 0.4rem;
+    margin-right: unset;
+  }
+
+  #eight {
+    display: flex;
+  }
+
+  #nine {
+    display: flex;
+    width: unset;
+    height: unset;
+    font-size: 0.4rem;
+    margin-right: unset;
+    padding: unset;
+  }
+
+  #ten {
+    display: flex;
+    width: unset;
+    height: unset;
+    margin-right: unset;
+    padding: unset;
+  }
+
+  #eleven {
+    display: flex;
+    width: unset;
+    height: unset;
+    margin-right: unset;
+    padding: unset;
+  }
+
+  #twenlve {
+    display: flex;
+    width: unset;
+    height: unset;
+    margin-right: unset;
+    padding: unset;
+  }
+
+  #see_pro {
+    display: flex;
+    width: unset;
+    height: unset;
+    margin-right: unset;
+    padding: unset;
+    font-size: 10px;
+  }
+
+  #see_pro1 {
+    display: flex;
+    width: unset;
+    height: unset;
+    margin-right: unset;
+    padding: unset;
+    font-size: 10px;
   }
 }
 
