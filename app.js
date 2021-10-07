@@ -35,4 +35,19 @@ for(let x = 0; x < data.length;x++){
     madalCloseButton.addEventListener('click', event => {
         modal.style.display = 'none';
     });
+
+    const email = document.getElementsByClassName('text__input');
+    const form = document.querySelector('.main__form');
+    const eror_message = document.querySelector('.error');
+
+    form.addEventListener('submit', () =>{
+        eror_message.innerHTML = "<p>'Stop'</p>";
+        // let messages = 'Plese make all the charactors in small casses.';      
+    //     for (let i= 0; i <= email.length; i++){
+    //         if (email[i] === email[i].toUpperCase()){
+    //            return messages;
+    //     }
+    // }
+    });
+
     
