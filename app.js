@@ -81,7 +81,7 @@ form.addEventListener('submit', (e) => {
   // let count = 0;
 
     if (arr !== arr.toLowerCase()) {
-      messages.push(`Email is required${(email.value[3])}`);
+      messages.push('Email should be all in lowercase');
           }
           if (messages.length > 0) {
             e.preventDefault();
