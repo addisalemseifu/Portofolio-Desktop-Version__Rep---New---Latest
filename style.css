@@ -186,7 +186,7 @@ body {
 #popup {
   position: fixed;
   left: 0;
-  top: 0;
+  top: 120px;
   display: none;
   justify-self: center;
   margin-left: 15%;
@@ -195,7 +195,7 @@ body {
   background-color: white;
   justify-content: center;
   width: 70vw;
-  height: 100vh;
+  /* height: 100vh; */
   z-index: 5000;
 }
 
