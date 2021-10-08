@@ -52,85 +52,34 @@ const email = document.getElementById('my_email');
 const form = document.querySelector('.main__form');
 const erorElement = document.querySelector('.error');
 
-// form.addEventListener('submit', (e) => {
-//   e.preventDefault();
-//   let messages = [];
-//   let count = 0;
-//   let arr = email.value.split('');
-
-//   for (let i= 0; i <= email.value.length; i++){
-//             if (email.value[i] === email.value[i].toUpperCase()){
-//               messages.push('Email is required');
-//               count += 1;
-//         }
-//       }
-
-//   // if (email.value === 'addisalemseifu@gmail.com' || email.value == null) {
-//   //   messages.push('Email is required');
-//   // }
-//   if (messages.length > 0) {
-//     e.preventDefault();
-//     erorElement.innerHTML = messages;
-//   }
-
-
-
 form.addEventListener('submit', (e) => {
-  let messages = [];
-  let arr = email.value;
+  const messages = [];
+  const arr = email.value;
   // let count = 0;
 
-    if (arr !== arr.toLowerCase()) {
-      messages.push('Email should be all in lowercase');
-      ale
-          }
-          if (messages.length > 0) {
-            e.preventDefault();
-            erorElement.innerHTML = messages;
-          }
-
-  // if (arr[0].toUpperCase() === 'A') {
-  //   messages.push(`Email is required${(email.value[3])}`);
-  // }
-  // if (messages.length > 0) {
-  //   e.preventDefault();
-  //   erorElement.innerHTML = messages;
-  // }
-
-
-
-  // eror_message.innerHTML = "<p>'Stop'</p>";
-  // let messages = 'Plese make all the charactors in small casses.';
-  //     for (let i= 0; i <= email.length; i++){
-  //         if (email[i] === email[i].toUpperCase()){
-  //            return messages;
-  //     }
-  // }
+  if (arr !== arr.toLowerCase()) {
+    messages.push('Error: Email should be all in lowercase');
+  }
+  if (messages.length > 0) {
+    e.preventDefault();
+    erorElement.innerHTML = messages;
+  }
 });
-if (arr !== arr.toLowerCase()) {
-  messages.push('Email should be all in lowercase');
-  ale
-      }
-      if (messages.length > 0) {
-        e.preventDefault();
-        erorElement.innerHTML = messages;
-      }
 
-// if (arr[0].toUpperCase() === 'A') {
-//   messages.push(`Email is required${(email.value[3])}`);
-// }
-// if (messages.length > 0) {
-//   e.preventDefault();
-//   erorElement.innerHTML = messages;
-// }
+//         const emailMobile = document.getElementById('email');
+//           const formMobile = document.getElementById('mobielForm');
+// const erorElementMobile = document.querySelector('.errorMobile');
 
+// form.addEventListener('submit', (e) => {
+//   let messagesMobile = [];
+//   let arrMobile = emailMobile.value;
+//   // let count = 0;
 
-
-// eror_message.innerHTML = "<p>'Stop'</p>";
-// let messages = 'Plese make all the charactors in small casses.';
-//     for (let i= 0; i <= email.length; i++){
-//         if (email[i] === email[i].toUpperCase()){
-//            return messages;
-//     }
-// }
-});
+//     if (arrMobile !== arrMobile.toLowerCase()) {
+//       messages.push('Error: Email should be all in lowercase');
+//           }
+//           if (messagesMobile.length > 0) {
+//             e.preventDefault();
+//             erorElementMobile.innerHTML = messagesMobile;
+//           }
+//         });
