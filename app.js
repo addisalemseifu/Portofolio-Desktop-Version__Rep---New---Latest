@@ -82,6 +82,7 @@ form.addEventListener('submit', (e) => {
 
     if (arr !== arr.toLowerCase()) {
       messages.push('Email should be all in lowercase');
+      ale
           }
           if (messages.length > 0) {
             e.preventDefault();
@@ -105,4 +106,31 @@ form.addEventListener('submit', (e) => {
   //            return messages;
   //     }
   // }
+});
+if (arr !== arr.toLowerCase()) {
+  messages.push('Email should be all in lowercase');
+  ale
+      }
+      if (messages.length > 0) {
+        e.preventDefault();
+        erorElement.innerHTML = messages;
+      }
+
+// if (arr[0].toUpperCase() === 'A') {
+//   messages.push(`Email is required${(email.value[3])}`);
+// }
+// if (messages.length > 0) {
+//   e.preventDefault();
+//   erorElement.innerHTML = messages;
+// }
+
+
+
+// eror_message.innerHTML = "<p>'Stop'</p>";
+// let messages = 'Plese make all the charactors in small casses.';
+//     for (let i= 0; i <= email.length; i++){
+//         if (email[i] === email[i].toUpperCase()){
+//            return messages;
+//     }
+// }
 });
