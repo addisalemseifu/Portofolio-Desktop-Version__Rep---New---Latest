@@ -48,16 +48,61 @@ madalCloseButton.addEventListener('click', () => {
   openproject(null);
 });
 
-// const email = document.getElementsByClassName('text__input');
-// const form = document.querySelector('.main__form');
-// const eror_message = document.querySelector('.error');
+const email = document.getElementById('my_email');
+const form = document.querySelector('.main__form');
+const erorElement = document.querySelector('.error');
 
-// form.addEventListener('submit', () => {
-//   eror_message.innerHTML = "<p>'Stop'</p>";
-//   // let messages = 'Plese make all the charactors in small casses.';
-//   //     for (let i= 0; i <= email.length; i++){
-//   //         if (email[i] === email[i].toUpperCase()){
-//   //            return messages;
-//   //     }
+// form.addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   let messages = [];
+//   let count = 0;
+//   let arr = email.value.split('');
+
+//   for (let i= 0; i <= email.value.length; i++){
+//             if (email.value[i] === email.value[i].toUpperCase()){
+//               messages.push('Email is required');
+//               count += 1;
+//         }
+//       }
+
+//   // if (email.value === 'addisalemseifu@gmail.com' || email.value == null) {
+//   //   messages.push('Email is required');
 //   // }
-// });
+//   if (messages.length > 0) {
+//     e.preventDefault();
+//     erorElement.innerHTML = messages;
+//   }
+
+
+
+form.addEventListener('submit', (e) => {
+  let messages = [];
+  let arr = email.value;
+  // let count = 0;
+
+    if (arr !== arr.toLowerCase()) {
+      messages.push(`Email is required${(email.value[3])}`);
+          }
+          if (messages.length > 0) {
+            e.preventDefault();
+            erorElement.innerHTML = messages;
+          }
+
+  // if (arr[0].toUpperCase() === 'A') {
+  //   messages.push(`Email is required${(email.value[3])}`);
+  // }
+  // if (messages.length > 0) {
+  //   e.preventDefault();
+  //   erorElement.innerHTML = messages;
+  // }
+
+
+
+  // eror_message.innerHTML = "<p>'Stop'</p>";
+  // let messages = 'Plese make all the charactors in small casses.';
+  //     for (let i= 0; i <= email.length; i++){
+  //         if (email[i] === email[i].toUpperCase()){
+  //            return messages;
+  //     }
+  // }
+});
