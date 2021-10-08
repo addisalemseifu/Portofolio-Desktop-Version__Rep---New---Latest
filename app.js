@@ -49,5 +49,3 @@ for(let x = 0; x < data.length;x++){
     //     }
     // }
     });
-
-    
